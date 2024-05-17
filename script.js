@@ -71,6 +71,17 @@ class Paper {
       this.holdingPaper = false;
       this.rotating = false;
     });
+          
+    // Array containing colors 
+    var colors = [ 
+        '#4D2D52', '#9A4C95', '#F0386B', '#0B132B', '#EA2B1F'
+    ]; 
+      
+    // selecting random color 
+    var random_color = colors[(Math.floor( 
+            Math.random() * colors.length))]; 
+      
+    paper.style.color = random_color; 
   }
 }
 
